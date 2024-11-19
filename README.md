@@ -12,20 +12,20 @@
 ## Introduction
 
 ### Background: 
-For a lending business house, there are two types of customer risks which may affect their business negatively. Those are
+For a lending business house, two types of customer risks may affect their business negatively. Those are
  - Customer defaults:
-       When the customers don't pay back full loan amount due to any reasons. This is called credit risk and causes loss in capital.
+       When the customers don't pay back the full loan amount due to any reason. This is called credit risk and causes a loss in capital.
  - Opportunity loss: 
-       During the loan verification process, bank rejects the loan applications for customers wrongly losing the business oppurtunity. This will impact the potential growth of business and ultimately monetary losses.
+       During the loan verification process, the loan application is rejected for an eligible customer wrongly and hence missing the business opportunity. This will impact the potential growth of business and ultimately monetary losses.
 
 ### Business Problem: 
-The aim of this work is to identify the various customer attributes and loan attributes which derive the loan status and  can be used to decide in making better decisions about lending the loans. Eventually this will reduce credit losses.
+ We are to identify the various customer attributes and loan attributes that drive the loan status and can be used to decide in making better decisions about lending loans. Eventually, this will reduce credit losses.
 ### Dataset:
-We have about 40k loan records which contain loan attributes(rate, installment, interest rate etc) and customer financial information for all those loans. All loan applications also have loan status which can be
-    - Fully Paid: It represents the loan is fully paid back. Ideal closure status
-    - Charged Off: This represents the customer has defaulted somewhere during loan term. These are the loans causing credit loss.
-    - Current: this case study is to identify the factors that drive a loan to default. It is based on the 40K loan application records, where personal & financial details of each customer and terms wof loans are provided.
-    PS: The data related to rejected loan applications is not provided. Hence, the opportunity losses will be out of scope of this case study.
+We have about 40k loan records which contain loan attributes(rate, installment, interest rates etc) and customer financial information for all those loans. All loan applications also have loan status which can be
+- Fully Paid: It represents the loan is fully paid back. Ideal closure status
+- Charged Off: This represents the customer has defaulted somewhere during loan term. These are the loans causing credit loss.
+- Current: this case study is to identify the factors that drive a loan to default. It is based on the 40K loan application records, where personal & financial details of each customer and terms wof loans are provided.
+  PS: The data related to rejected loan applications is not provided. Hence, the opportunity losses will be out of scope of this case study.
 
 ## Conclusions
 1. Total number of loans issued steadily increase over the years. However, percentage of loan defaults increase. More market/customer adjustments to be done to cater to changing market condtitions.
@@ -38,20 +38,18 @@ We have about 40k loan records which contain loan attributes(rate, installment, 
 
 ## Technologies Used
 
-seaborn 0.11.1
-jupyter 1.0.0
-numpy 1.20.1
-anaconda 2021.05
-python 3.8.8 
-matplotlib 3.3.4
-Microsoft excel
+- seaborn 0.11.1
+- jupyter 1.0.0
+- numpy 1.20.1
+- anaconda 2021.05
+- python 3.8.8
+- matplotlib 3.3.4
+- Microsoft excel
 
 ## Acknowledgements
 
-[Priyanka](@Priyanka9199)- This project was done as part of group case study with Priyanka as my team member.
+[Priyanka](https://github.com/priyanka9199)- This project was done as part of group case study with Priyanka as my team member.
 
 ## Contacts
 
-Created by @NavsGo - feel free to contact me!
-
-
+Created by [Navita Goel](https://github.com/NavsGo)- feel free to contact me!
