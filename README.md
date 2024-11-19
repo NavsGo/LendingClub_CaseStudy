@@ -1,52 +1,57 @@
-# Project Name
-> Outline a brief description of your project.
-
+# Lending Club Case Study
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
+
+* [Introduction](#introduction)
 * [Conclusions](#conclusions)
+* [Technologies Used](#technologies-used)
 * [Acknowledgements](#acknowledgements)
+* [Contact](#contacts)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+## Introduction
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+### Background: 
+For a lending business house, there are two types of customer risks which may affect their business negatively. Those are
+ - Customer defaults:
+       When the customers don't pay back full loan amount due to any reasons. This is called credit risk and causes loss in capital.
+ - Opportunity loss: 
+       During the loan verification process, bank rejects the loan applications for customers wrongly losing the business oppurtunity. This will impact the potential growth of business and ultimately monetary losses.
+
+### Business Problem: 
+The aim of this work is to identify the various customer attributes and loan attributes which derive the loan status and  can be used to decide in making better decisions about lending the loans. Eventually this will reduce credit losses.
+### Dataset:
+We have about 40k loan records which contain loan attributes(rate, installment, interest rate etc) and customer financial information for all those loans. All loan applications also have loan status which can be
+    - Fully Paid: It represents the loan is fully paid back. Ideal closure status
+    - Charged Off: This represents the customer has defaulted somewhere during loan term. These are the loans causing credit loss.
+    - Current: this case study is to identify the factors that drive a loan to default. It is based on the 40K loan application records, where personal & financial details of each customer and terms wof loans are provided.
+    PS: The data related to rejected loan applications is not provided. Hence, the opportunity losses will be out of scope of this case study.
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+1. Total number of loans issued steadily increase over the years. However, percentage of loan defaults increase. More market/customer adjustments to be done to cater to changing market condtitions.
+2. The customer default rate is directly related to loan grades. More stringent evaluation for loans falling in lower grade category.
+3. Though the loans issued to home owners are much less, the Charged off rate for these loans is still higher than for customers with mortgages. Further analysis suggests for same dti, the home owners customers have higher charge offs even when they have less credit utilization. This indicates there may be some market factors affecting the ability of home owners to pay back. More analysis required to understand the actions to consider how to better decide loans for home owners.
+4. The customers with OTHER category has maximum default rate and need closer examination by dividing it in further sub categories.
+5. The customers who have taken loan for small businesses are much more likely that other purposes. The evaluation for these loans should be looked at.
+6. About 14% of loans defult in total.
+7. The loans with larger term duration are more likely to default than lower term loans. 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+seaborn 0.11.1
+jupyter 1.0.0
+numpy 1.20.1
+anaconda 2021.05
+python 3.8.8 
+matplotlib 3.3.4
+Microsoft excel
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+
+[Priyanka](@Priyanka9199)- This project was done as part of group case study with Priyanka as my team member.
+
+## Contacts
+
+Created by @NavsGo - feel free to contact me!
 
 
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
