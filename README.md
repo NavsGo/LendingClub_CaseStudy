@@ -12,30 +12,30 @@
 ## Introduction
 
 ### Background: 
-For a lending business house, two types of customer risks may affect their business negatively. Those are
+For a consumer finance company, two types of risks are associated with their decision to approve or reject any loan application. Those are
  - Customer defaults:
-       When the customers don't pay back the full loan amount due to any reason. This is called credit risk and causes a loss in capital.
+   If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company
  - Opportunity loss: 
-       During the loan verification process, the loan application is rejected for an eligible customer wrongly and hence missing the business opportunity. This will impact the potential growth of business and ultimately monetary losses.
+       If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
 
 ### Business Problem: 
- We are to identify the various customer attributes and loan attributes that drive the loan status and can be used to decide in making better decisions about lending loans. Eventually, this will reduce credit losses.
+ To reduce the risks associated with the approval process, we are to identify patterns to indicate if a person is likely to default, which may then be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc.
+ 
 ### Dataset:
-We have about 40k loan records which contain loan attributes(rate, installment, interest rates etc) and customer financial information for all those loans. All loan applications also have loan status which can be
-- Fully Paid: It represents the loan is fully paid back. Ideal closure status
-- Charged Off: This represents the customer has defaulted somewhere during loan term. These are the loans causing credit loss.
-- Current: this case study is to identify the factors that drive a loan to default. It is based on the 40K loan application records, where personal & financial details of each customer and terms wof loans are provided.
-  PS: The data related to rejected loan applications is not provided. Hence, the opportunity losses will be out of scope of this case study.
+We have about 40k loan records which contain loan attributes(rate, installment, interest rates etc) and customer financial information for all those loans. All loan applications also have loan status (target variable) which can be
+- Fully paid: Applicant has fully paid the loan (the principal and the interest rate)
+- Current: Applicant is in the process of paying the installments, i.e. the tenure of the loan is not yet completed. These candidates are not labeled as 'defaulted'.
+- Charged-off: Applicant has not paid the installments in due time for a long time, i.e. he/she has defaulted on the loan 
+PS: The data related to rejected loan applications is not provided. Hence, the opportunity losses will be out of scope for this case study. Also, Current loan records will be ignored as we don't know if they will default or not. Hence can't be studied to find required trends.  
 
 ## Conclusions
-1. Total number of loans issued steadily increase over the years. However, percentage of loan defaults increase. More market/customer adjustments to be done to cater to changing market condtitions.
-2. The customer default rate is directly related to loan grades. More stringent evaluation for loans falling in lower grade category.
-3. Though the loans issued to home owners are much less, the Charged off rate for these loans is still higher than for customers with mortgages. Further analysis suggests for same dti, the home owners customers have higher charge offs even when they have less credit utilization. This indicates there may be some market factors affecting the ability of home owners to pay back. More analysis required to understand the actions to consider how to better decide loans for home owners.
-4. The customers with OTHER category has maximum default rate and need closer examination by dividing it in further sub categories.
-5. The customers who have taken loan for small businesses are much more likely that other purposes. The evaluation for these loans should be looked at.
-6. About 14% of loans defult in total.
-7. The loans with larger term duration are more likely to default than lower term loans. 
-
+1. In total, about 14.15% of loans have defaulted.
+2. The total number of issued loans steadily increases over the years which indicates a growing business. However, the percentage of loan defaults is increasing. This suggests that the current criteria for loan approval does not adjust to changing market conditions with time.
+3. The loan default rate consistently increases with lowering loan grades. More stringent evaluation criteria needed for loans falling in lower grades.
+4. The loans with larger term duration are more likely to default than lower term loans.
+5. Though the loans issued to home owners are much less, loan Charged off rate for these loans is still higher than for customers with mortgages. Further analysis suggests for same dti, the home owners customers have higher charge offs even when they have less credit utilization. This indicates there may be some customer's personal(age etc) or market factors affecting the ability of home owners to pay back. More analysis is required to understand the actions to consider how to better decide for loans for home owners.
+6. The customers with OTHER category has maximum default rate and need closer examination by dividing it in further sub categories.
+7. The customers who have taken loan for small businesses are much more likely that other purposes. The evaluation for these loans should be revisited.
 ## Technologies Used
 
 - seaborn 0.11.1
@@ -48,7 +48,7 @@ We have about 40k loan records which contain loan attributes(rate, installment, 
 
 ## Acknowledgements
 
-[Priyanka](https://github.com/priyanka9199)- This project was done as part of group case study with Priyanka as my team member.
+[Priyanka](https://github.com/priyanka9199)- This project was done as part of the group case study with Priyanka as my team member.
 
 ## Contacts
 
