@@ -3,6 +3,7 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
+* [Data Observations](#observations)
 * [Conclusions](#conclusions)
 * [Technologies Used](#technologies-used)
 * [Acknowledgements](#acknowledgements)
@@ -28,14 +29,32 @@ We have about 40k loan records which contain loan attributes(rate, installment, 
 - Charged-off: Applicant has not paid the installments in due time for a long time, i.e. he/she has defaulted on the loan 
 PS: The data related to rejected loan applications is not provided. Hence, the opportunity losses will be out of scope for this case study. Also, Current loan records will be ignored as we don't know if they will default or not. Hence can't be studied to find required trends.  
 
+## Observations
+
+### Loan attributes:
+- About 14.2 loans have defaulted over last 4 years
+- The total number of loans suggest that the business is consistently over the years
+- Most of the loans issued are in 5k to 10K range
+- More than 50% of loans are in grade A, B which have charge off rates of below 14.2
+- About 70% of loans are short duration (3 years).
+
+### Customer attributes
+- Most of the customers have salary in  40 K to 80 K range.
+- More than 75% of customers  have either rented homes or have mortgages
+- About 40% of customers come from California, New York and Florida.
+
+
 ## Conclusions
-1. In total, about 14.15% of loans have defaulted.
-2. The total number of issued loans steadily increases over the years which indicates a growing business. However, the percentage of loan defaults is increasing. This suggests that the current criteria for loan approval does not adjust to changing market conditions with time.
-3. The loan default rate consistently increases with lowering loan grades. More stringent evaluation criteria needed for loans falling in lower grades.
-4. The loans with larger term duration are more likely to default than lower term loans.
-5. Though the loans issued to home owners are much less, loan Charged off rate for these loans is still higher than for customers with mortgages. Further analysis suggests for same dti, the home owners customers have higher charge offs even when they have less credit utilization. This indicates there may be some customer's personal(age etc) or market factors affecting the ability of home owners to pay back. More analysis is required to understand the actions to consider how to better decide for loans for home owners.
-6. The customers with OTHER category has maximum default rate and need closer examination by dividing it in further sub categories.
-7. The customers who have taken loan for small businesses are much more likely that other purposes. The evaluation for these loans should be revisited.
+
+### Positive observations:
+- The interest rates are in accordance to riskiness of loans. I.e. categories having higher default rate (longer duration, lower loan grade) have higher rate of interest.
+- The loan amount issued is always less than funded amount without exceptions (is it system enforced)
+
+#### Recommendations:
+- The loan applicants whose income has been verified are doing poorly than unverified loans. This is rather odd. There is a need to investigate further to see if it is a data issue or evaluation issue.
+- The grade C&D loans for customers having mortgaged or rented houses have relatively higher default rate. More investigation is needed.
+- I couldn’t see any direct relation to loan amount issued to customer income or DTI. Further investigation is needed to establish how customer’s ability to pay is factored in the loan approval process.
+
 ## Technologies Used
 
 - seaborn 0.11.1
@@ -48,7 +67,7 @@ PS: The data related to rejected loan applications is not provided. Hence, the o
 
 ## Acknowledgements
 
-[Priyanka](https://github.com/priyanka9199)- This project was done as part of the group case study with Priyanka as my team member.
+[Priyanka Kumari](https://github.com/priyanka9199)- This project was done as part of the group case study with Priyanka as my team member.
 
 ## Contacts
 
