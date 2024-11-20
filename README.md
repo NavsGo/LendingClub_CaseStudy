@@ -3,8 +3,7 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [Data Observations](#observations)
-* [Conclusions](#conclusions)
+* [EDA Observations & recommendations](#eda-data-observations-&-recommendations)
 * [Technologies Used](#technologies-used)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contacts)
@@ -29,7 +28,7 @@ We have about 40k loan records which contain loan attributes(rate, installment, 
 - Charged-off: Applicant has not paid the installments in due time for a long time, i.e. he/she has defaulted on the loan 
 PS: The data related to rejected loan applications is not provided. Hence, the opportunity losses will be out of scope for this case study. Also, Current loan records will be ignored as we don't know if they will default or not. Hence can't be studied to find required trends.  
 
-## Observations
+## EDA Data observations & recommendations
 
 ### Loan attributes:
 - About 14.2 loans have defaulted over last 4 years
@@ -37,18 +36,11 @@ PS: The data related to rejected loan applications is not provided. Hence, the o
 - Most of the loans issued are in 5k to 10K range
 - More than 50% of loans are in grade A, B which have charge off rates of below 14.2
 - About 70% of loans are short duration (3 years).
-
+- The interest rates increase with duration of loans.Similarly,the interest rate increase as the loan grade lowers.This is to factor in riskiness of longer duration and low graded loans.
 ### Customer attributes
 - Most of the customers have salary in  40 K to 80 K range.
 - More than 75% of customers  have either rented homes or have mortgages
 - About 40% of customers come from California, New York and Florida.
-
-
-## Conclusions
-
-### Positive observations:
-- The interest rates are in accordance to riskiness of loans. I.e. categories having higher default rate (longer duration, lower loan grade) have higher rate of interest.
-- The loan amount issued is always less than funded amount without exceptions (is it system enforced)
 
 #### Recommendations:
 - The loan applicants whose income has been verified are doing poorly than unverified loans. This is rather odd. There is a need to investigate further to see if it is a data issue or evaluation issue.
